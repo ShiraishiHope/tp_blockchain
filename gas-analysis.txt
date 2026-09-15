@@ -1,0 +1,9 @@
+Q1 — gas de transfer() (implementation de reference) : 78944
+Q2 — gas de transfer() sans bloc unchecked : 79142  (ecart : 198)
+Q3 — gas de transfer() (chemin nominal) avec require et chaine : 78944  (ecart : 0)
+Q3 — taille du bytecode : erreur custom 2347 octets, require avec chaine 2421 octets
+Q3 — cout du chemin de revert : erreur custom 37770, require avec chaine None (test incompatible, erreur attendue differente)
+Q4 — gas du constructeur : 0
+Q5 — gas de transfer() avec optimizer_runs=1 : 79414
+Q5 — gas de transfer() avec optimizer_runs=200 : 78944
+Q5 — gas de transfer() avec optimizer_runs=1000 : 78881
